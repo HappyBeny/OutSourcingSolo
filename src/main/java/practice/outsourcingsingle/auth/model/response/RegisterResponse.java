@@ -1,10 +1,10 @@
-package practice.outsourcingsingle.auth.model.dto;
+package practice.outsourcingsingle.auth.model.response;
 
 import practice.outsourcingsingle.common.domain.enums.UserRole;
-//인증 객체
-public record AuthUser(
+
+public record RegisterResponse(
         Long id,
-        String email,
+        String name,
         UserRole userRole
 ) {
 }
